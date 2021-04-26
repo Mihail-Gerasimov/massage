@@ -1,0 +1,112 @@
+.main
+    background-image: url(../img/index/bgMain.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    height: calc( 100vh - 119px )
+    padding-bottom: 30px
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    &__container
+        margin: 0
+        max-width: 100%
+        flex-basis: 100%
+    &__water
+        position: absolute
+        right: 200px
+        bottom: 45px
+    &__inner
+        cursor: pointer
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        max-width: 150px
+        align-self: flex-end
+        img
+            transition: 0.3s
+            animation-name: scrollDownQuest
+            animation-duration: 5s
+            animation-iteration-count: infinite
+        &__text
+            font-family: 'Montserrat-Medium'
+            font-style: normal
+            font-size: 20px
+            line-height: 130%
+            color: #FAE4FC
+            margin-bottom: 5px
+            text-shadow: 0 0 5px #FF50F8
+    &__button
+        display: block
+        margin: auto
+    &__title
+        text-align: center
+        font-family: 'newtonxc'
+        font-style: normal
+        font-weight: normal
+        &__effect
+            font-size: 90px
+            line-height: 100%
+            -webkit-text-fill-color: transparent
+            display: block
+            min-width: 360px
+            &--1
+                position: relative
+                z-index: 3
+                -webkit-text-stroke-color: #FFEBFE
+                -webkit-text-stroke-width: 3px
+            &--2
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+                -webkit-text-stroke: 3px #FECDFF
+                z-index: 2
+                filter: blur(3px)
+            &--3
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+                -webkit-text-stroke: 3px #FF50F8
+                z-index: 1
+                filter: blur(10px)
+        &__span
+            display: block
+            margin-bottom: 22px
+            &:first-of-type
+                font-size: 55px
+                text-shadow: 0px 4px 30px rgba(22, 22, 72, 0.93)
+                line-height: 100%
+                margin-bottom: 15px
+                
+            &:last-of-type
+                font-size: 45px
+                line-height: 100%
+                text-shadow: 0px 4px 30px rgba(22, 22, 72, 0.93)
+    &__text
+        max-width: 1125px
+        text-align: center
+        margin-left: auto
+        margin-right: auto
+        font-family: 'Montserrat-Medium'
+        font-style: normal
+        font-size: 30px
+        line-height: 130%
+        margin-bottom: 12px
+        &--bottom
+            text-align: center
+            font-family: 'Montserrat-Bold'
+            font-style: normal
+            font-size: 30px;
+            line-height: 130%
+            color: rgba(255, 255, 255, 0.9)
+            text-shadow: 0px 0px 10px rgba(22, 22, 72, 0.93), 0px 0px 35px rgba(22, 22, 72, 0.97)
+            margin-bottom: 55px
+
+.index__button
+    width: 480px
+    padding: 15px 0

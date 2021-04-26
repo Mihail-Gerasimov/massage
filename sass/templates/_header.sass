@@ -1,0 +1,114 @@
+.header
+    background: url(../img/bg/header-bg.png) no-repeat center
+    background-size: cover
+    padding-top: 10px
+    padding-bottom: 10px
+    transition: 0.3s
+    &--active
+        .header__burger__line
+                &:nth-child(2)
+                    display: none
+                &:first-of-type
+                    transform: rotate(-45deg)
+                    transform-origin: right top
+                &:last-of-type
+                    transform: rotate(45deg)
+                    transform-origin: right bottom
+        .header__menu
+            transform: none
+            max-height: 100%
+    &__menu
+        padding: 35px 20px
+        width: 245px
+        display: none
+        flex-direction: column
+        background: url(../img/bg/burger-bg.png) no-repeat center
+        background-size: cover
+        transform: translateX(-100%)
+        transition: 0.3s
+        position: relative
+        &__tel
+            display: flex
+            align-items: center
+            img
+                margin-right: 10px
+            &__text
+                font-family: 'Nunito-600'
+                font-style: normal
+                font-weight: 600
+                font-size: 16px
+                line-height: 22px
+        &__close
+            font-family: 'Nunito-600'
+            position: absolute
+            right: 15px
+            top: 20px
+            color: #fff
+            font-size: 16px
+        &__wrap
+            display: flex
+            flex-direction: column
+            padding-left: 10px
+            border-bottom: 1px solid #F0F0F0;
+            margin-bottom: 30px
+        &__link
+            font-family: 'Nunito-600'
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
+            color: #FFFFFF
+            margin-bottom: 25px
+    &__nav
+        &__link
+            font-family: 'Montserrat-Medium'
+            font-style: normal
+            font-size: 20px
+            line-height: 130%
+            color: #FFFFFF
+            transition: 0.3s
+            padding: 15px
+            padding-right: 25px
+            border-right: 1px solid #FEECFF
+            &:hover
+                color: #C52B20
+            &:last-of-type
+                border: none
+    &__button
+        padding: 10px 25px
+        color: #ffffff
+        overflow: hidden
+        position: relative
+        border-radius: 3px
+        transition: 0.3s
+        font-family: 'Montserrat-Medium'
+        font-style: normal
+        font-size: 20px
+        line-height: 24px
+        &::before
+            content: ''
+            position: absolute
+            top: 0px
+            bottom: 0px
+            left: 0px
+            right: 0px
+            border: 2px solid #6B181B
+            border-image: linear-gradient(to bottom, #C52B20 5%, #6B181B 100%)
+            border-image-slice: 1
+        &:hover
+            color: #C52B20
+    &__tel
+        display: none
+    &__burger
+        width: 30px
+        height: 23px
+        display: none
+        flex-direction: column
+        justify-content: space-between
+        cursor: pointer
+        &__line
+            height: 3px
+            border-radius: 2px
+            background-color: #fff
+            width: 100%
+            transition: 0.3s

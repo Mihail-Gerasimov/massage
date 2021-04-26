@@ -1,0 +1,26 @@
+.interior
+    padding-top: 180px
+    padding-bottom: 180px
+    background-image: url(../img/interior/bg.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    &__img
+        width: 750px
+        height: 590px
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow: hidden
+        &:nth-child(2n)
+            justify-self: start
+    &__title
+        margin-bottom: 60px
+    &__text
+        max-width: 1200px
+        margin: 0 auto 180px auto
+    &__box
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(750px, 1fr))
+        justify-items: end
+        column-gap: 20px
+        row-gap: 30px 

@@ -1,0 +1,214 @@
+.modal
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    z-index: 199
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0, 0.6)
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: 0.5s
+    &--visible
+        opacity: 1
+        visibility: visible
+    &__dialog
+        background-image: url(../img/bg/bgModal.png)
+        background-repeat: no-repeat
+        background-position: center
+        background-color: #1B0B26
+        position: relative
+        padding: 50px 150px 20px
+        border-radius: 5px
+    &__cover
+        background-size: cover
+    &__close
+        position: absolute
+        top: 30px
+        right: 30px
+        font-size: 22px
+        cursor: pointer
+    &__title
+        font-family: 'newtonxc'
+        font-style: normal
+        font-size: 30px
+        line-height: 100%
+        text-align: center
+        text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5)
+        margin-bottom: 15px
+    &__subtitle
+        font-family: 'Montserrat-Medium'
+        font-style: normal
+        font-size: 23px
+        line-height: 120%
+        text-align: center
+        color: #FFFFFF
+        text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5)
+        max-width: 395px
+        margin: 0 auto 20px auto
+    &__input
+        width: 430px
+        padding: 15px 30px 10px
+        font-family: 'Montserrat-Medium'
+        font-style: normal
+        font-size: 23px
+        line-height: 120%
+        color: #858585
+        background: #FFFFFF
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 5px
+        border: none
+        margin: 0 auto 25px auto
+        display: block
+        &:focus
+            outline: none
+        &-group
+            position: relative
+        &__invalid
+            position: absolute
+            bottom: -24px
+            left: 0
+            font-family: 'Montserrat-SemiBold'
+            font-style: normal
+            font-size: 10px
+            color: tomato
+    &__button
+        padding: 10px 0
+        width: 430px
+        display: block
+        margin: 0 auto 35px auto
+    &__label
+        position: relative
+        font-family: 'Montserrat-Regular'
+        font-style: normal
+        font-size: 13px
+        line-height: 120%
+        width: 430px
+        display: block
+        padding-left: 35px
+        cursor: pointer
+        margin: auto
+    &__check
+        display: none
+        &:checked + .modal__ok
+            background-image: url(../img/logo/check.png)
+        &__invalid
+            position: absolute
+            bottom: -15px
+            left: 0
+            font-family: 'Montserrat-SemiBold'
+            font-style: normal
+            font-size: 10px
+            color: tomato
+    &__ok
+        display: block
+        background: #FFFFFF
+        box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.44)
+        border-radius: 2px
+        width: 20px
+        height: 20px
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+
+.modal-success
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    z-index: 1002
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0, 0.6)
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: 0.5s
+    &--visible
+        opacity: 1
+        visibility: visible
+    &__dialog
+        background: url(../img/bg/bgModalSuccess.png) no-repeat center
+        position: relative
+        width: 660px
+        height: 465px
+        display: flex
+        justify-content: center
+        align-items: center
+        &--age
+            background: url(../img/quest/bgQuestSl.png) no-repeat center !important
+    &__close
+        position: absolute
+        top: 25px
+        right: 25px
+        font-size: 22px
+        cursor: pointer
+    &__text
+        font-family: 'Montserrat-Medium'
+        font-style: normal
+        font-size: 30px
+        line-height: 120%
+        text-align: center
+        text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5)
+        text-align: center
+
+.age
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    z-index: 1001
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.73) 0%, #000000 60%)
+    display: flex
+    align-items: center
+    justify-content: center
+    &--visible
+        opacity: 1
+        visibility: visible
+    &__dialog
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 15px
+    &__title
+        font-family: 'newtonxc'
+        font-style: normal
+        font-size: 65px;
+        line-height: 100%
+        text-align: center
+        text-shadow: 0px 4px 30px rgba(22, 22, 72, 0.93)
+        margin-bottom: 40px
+    &__text
+        font-family: 'Montserrat-Medium'
+        font-style: normal
+        font-size: 35px
+        line-height: 130%
+        text-align: center
+        text-shadow: 0px 4px 30px rgba(22, 22, 72, 0.93)
+        max-width: 770px
+        margin-bottom: 25px
+    &__button
+        padding: 15px 90px
+        margin-bottom: 15px
+        &--no
+            background: transparent
+            &:hover
+                border: 2px solid transparent
